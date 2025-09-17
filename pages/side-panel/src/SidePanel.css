@@ -1,0 +1,300 @@
+/* Add this at the top of the file */
+body {
+  background-color: #ffffff !important; /* Light: white bg */
+  color: #000000 !important; /* Light: black text */
+  border-color: rgb(159, 6, 11) !important;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000000 !important; /* Dark: black bg */
+    color: #ffffff !important; /* Dark: white text */
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+/* Remove unused classes: .App, .App-logo, .App-header */
+
+code {
+  background: rgba(200, 200, 200, 0.3); /* Lighter gray background */
+  border-radius: 0.25rem;
+  padding: 0.2rem 0.5rem;
+  color: #374151; /* Dark gray text */
+  font-family: 'Inter', sans-serif;
+}
+
+/* Dark mode support for code */
+@media (prefers-color-scheme: dark) {
+  code {
+    background: rgba(100, 100, 100, 0.3); /* Dark gray background */
+    color: #d1d5db; /* Light gray text */
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1; /* Light gray */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8; /* Medium gray */
+}
+
+/* Dark mode scrollbar */
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar-track {
+    background: #1e293b;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #4b5563; /* Dark gray */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6b7280; /* Medium gray */
+  }
+}
+
+/* Used classes from the component */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background-color: transparent;
+  border-bottom: 1px solid #e5e7eb; /* Light gray border */
+}
+
+/* Dark mode header border */
+@media (prefers-color-scheme: dark) {
+  .header {
+    border-bottom: 1px solid #4b5563; /* Dark gray border */
+  }
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-icons {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.header-icon {
+  color: #6b7280; /* Gray color */
+  cursor: pointer;
+  transition: color 0.2s ease;
+  opacity: 0.8;
+  border-radius: 9999px; /* Rounded full */
+  padding: 0.5rem;
+}
+
+.header-icon:hover {
+  color: #374151; /* Dark gray */
+  opacity: 1;
+  background-color: #f3f4f6; /* Light gray background on hover */
+}
+
+.send-button {
+  color: #6b7280; /* Gray color */
+  cursor: pointer;
+  transition: all 0.2s ease;
+  opacity: 0.8;
+  border-radius: 9999px; /* Rounded full */
+  padding: 0.5rem;
+}
+
+.send-button:hover {
+  color: #374151; /* Dark gray */
+  opacity: 1;
+  background-color: #f3f4f6; /* Light gray background on hover */
+}
+
+.send-button:disabled {
+  color: #9ca3af; /* Light gray */
+  cursor: not-allowed;
+  opacity: 0.5;
+  background-color: transparent;
+}
+
+/* Dark mode buttons */
+@media (prefers-color-scheme: dark) {
+  .header-icon {
+    color: #d1d5db; /* Light gray */
+  }
+  
+  .header-icon:hover {
+    color: #ffffff;
+    background-color: #374151; /* Dark gray background on hover */
+  }
+  
+  .send-button {
+    color: #d1d5db; /* Light gray */
+  }
+  
+  .send-button:hover {
+    color: #ffffff;
+    background-color: #374151; /* Dark gray background on hover */
+  }
+  
+  .send-button:disabled {
+    color: #6b7280; /* Medium gray */
+  }
+}
+
+/* Message bubble styles */
+.message-container {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.message-user {
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.message-ai {
+  justify-content: flex-start;
+}
+
+.message-bubble {
+  max-width: 80%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  margin: 0.25rem 0;
+}
+
+.message-user .message-bubble {
+  background-color: #f3f4f6; /* Light gray for user messages */
+  color: #000000;
+}
+
+.message-ai .message-bubble {
+  background-color: transparent; /* No visible bubble for AI */
+  color: inherit; /* Inherit text color from parent */
+  padding: 0.5rem 0; /* Reduced padding for AI messages */
+  border: none;
+  max-width: 100%;
+}
+
+/* Dark mode message bubbles */
+@media (prefers-color-scheme: dark) {
+  .message-user .message-bubble {
+    background-color: #374151; /* Dark gray for user messages */
+    color: #ffffff;
+  }
+  
+  .message-ai .message-bubble {
+    color: #ffffff; /* White text for AI in dark mode */
+  }
+}
+
+/* Input bar styling - positioned at bottom by default */
+.chat-input-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.95) 0%, transparent 100%);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  margin-bottom: 5%; /* Reduced from 20% to 5% for better positioning */
+}
+/* Dark mode input container */
+@media (prefers-color-scheme: dark) {
+  .chat-input-container {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, transparent 100%);
+  }
+}
+
+.input-bar {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 0.875rem;
+}
+
+/* Dark mode input bar */
+@media (prefers-color-scheme: dark) {
+  .input-bar {
+    border-color: #374151;
+    background-color: #1f2937;
+    color: #ffffff;
+  }
+}
+
+/* Add these styles to your existing CSS */
+.scrollbar-gutter-stable {
+  scrollbar-gutter: stable;
+}
+
+.scrollbar-gutter-stable::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-gutter-stable::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.scrollbar-gutter-stable::-webkit-scrollbar-thumb {
+  background: #cbd5e1; /* Light gray */
+  border-radius: 4px;
+}
+
+.scrollbar-gutter-stable::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8; /* Medium gray */
+}
+
+/* Dark mode scrollbar for scrollbar-gutter-stable */
+@media (prefers-color-scheme: dark) {
+  .scrollbar-gutter-stable::-webkit-scrollbar-track {
+    background: #1e293b;
+  }
+  
+  .scrollbar-gutter-stable::-webkit-scrollbar-thumb {
+    background: #4b5563; /* Dark gray */
+  }
+  
+  .scrollbar-gutter-stable::-webkit-scrollbar-thumb:hover {
+    background: #6b7280; /* Medium gray */
+  }
+}
+
+/* Dark mode text and background colors */
+@media (prefers-color-scheme: dark) {
+  .dark-mode-text {
+    color: #ffffff !important; /* White text */
+  }
+  
+  .dark-mode-bg {
+    background-color: #1e293b !important; /* Dark background */
+  }
+  
+  .dark-mode-border {
+    border-color: #4b5563 !important; /* Dark gray border */
+  }
+}
+
+/* Message list container padding */
+.message-list-container {
+  padding-bottom: 120px; /* Space for fixed input at bottom */
+}

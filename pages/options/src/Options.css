@@ -1,0 +1,54 @@
+#app-container {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  font-size: calc(10px + 2vmin);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff; /* Light mode background */
+  color: #000000; /* Light mode text */
+}
+
+code {
+  background: rgba(200, 200, 200, 0.3); /* Light gray background */
+  border-radius: 0.25rem;
+  padding: 0.2rem 0.5rem;
+  color: #374151; /* Dark gray text */
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .App {
+    background-color: #0d1117; /* Dark mode background (ChatGPT dark) */
+    color: #ffffff; /* Dark mode text */
+  }
+  
+  code {
+    background: rgba(100, 100, 100, 0.3); /* Dark gray background */
+    color: #d1d5db; /* Light gray text */
+  }
+  
+  .dark-mode-text {
+    color: #ffffff !important; /* White text */
+  }
+  
+  .dark-mode-bg {
+    background-color: #1f2937 !important; /* Dark background */
+  }
+  
+  .dark-mode-border {
+    border-color: #374151 !important; /* Dark gray border */
+  }
+}
