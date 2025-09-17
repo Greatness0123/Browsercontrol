@@ -2,11 +2,11 @@
 
 ## Introduction
 
-[Control](https://github.com/Greatness0123/Control) is an open-source AI web automation tool that runs in your browser as a Chrome extension. This Privacy Policy explains how Control handles your data and protects your privacy.
+[Control](https://github.com/Greatness0123/Browsercontrol) is an open-source AI web automation tool that runs in your browser as a Chrome extension. This Privacy Policy explains how Control handles your data and protects your privacy.
 
 ## Open Source Commitment
 
-Control is an open-source project licensed under the Apache License 2.0. All source code is publicly available in our [GitHub repository](https://github.com/Greatness0123/Control), ensuring complete transparency in how the application functions and processes data.
+Control is an open-source project licensed under the Apache License 2.0. All source code is publicly available in our [GitHub repository](https://github.com/Greatness0123/Browsercontrol), ensuring complete transparency in how the application functions and processes data.
 
 ## Data Collection and Processing
 
@@ -41,4 +41,4 @@ We may update this Privacy Policy from time to time to reflect changes in our pr
 
 If you have any questions or concerns about this Privacy Policy, please contact us at cws@felight.xyz
 
-Last Updated: March 5, 2025
+Last Updated: september 17, 2025
