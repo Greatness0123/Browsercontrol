@@ -62,6 +62,6 @@ Control is a polished, ChatGPT-style AI web automation Chrome extension that hel
 
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
+<!-- ## Acknowledgments
 
-Control is a fork of [Nanobrowser](https://github.com/nanobrowser/nanobrowser). All credit for the core functionality goes to the original authors.
+Control is a fork of [Nanobrowser](https://github.com/nanobrowser/nanobrowser). All credit for the core functionality goes to the original authors. -->
